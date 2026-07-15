@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "source": "Reverse-engineered from EG4/LuxPower firmware, eg4-bridge/doc, and fleet configs",
+    "docs": {
+      "lsp": "docs/lsp-schedule-fields.md",
+      "hold_model": "docs/hold-model-fields.md"
+    }
+  },
+  "field_patterns": [
+    {
+      "pattern": "^FUNC_LSP_BAT_FIRST_(\\d+)_EN$",
+      "family": "PV Charge Priority",
+      "description": "LSP slot {slot} ({time}) — PV Charge Priority / Charge Priority"
+    },
+    {
+      "pattern": "^FUNC_LSP_BYPASS_(\\d+)_EN$",
+      "family": "Bypass Mode",
+      "description": "LSP slot {slot} ({time}) — Bypass Mode"
+    },
+    {
+      "pattern": "^FUNC_LSP_OUTPUT_(\\d+)_EN$",
+      "family": "Output priority",
+      "description": "LSP slot {slot} ({time}) — Output priority"
+    }
+  ],
+  "fields": {
+    "FUNC_LSP_BAT_ACTIVATION_EN": "Battery activation in LSP scheduler",
+    "FUNC_LSP_BATT_VOLT_OR_SOC": "LSP thresholds use voltage vs SOC",
+    "FUNC_LSP_BYPASS_EN": "Bypass mode subsystem enabled in LSP scheduler",
+    "FUNC_LSP_BYPASS_MODE_EN": "Master enable for Bypass Mode in LSP scheduler",
+    "FUNC_LSP_CHARGE_PRIORITY_EN": "Master charge-priority enable in LSP scheduler",
+    "FUNC_LSP_AC_CHARGE": "AC charge active in LSP scheduler context",
+    "FUNC_LSP_FAN_CHECK_EN": "Fan check in LSP context",
+    "FUNC_LSP_ISO_EN": "ISO / ground-fault check in LSP context",
+    "FUNC_LSP_LCD_REMOTE_DIS_CHG_EN": "LCD remote discharge disable",
+    "FUNC_LSP_SELF_CONSUMPTION_EN": "Self Consumption as default fill mode in LSP scheduler",
+    "FUNC_LSP_SET_TO_STANDBY": "Standby in LSP scheduler context",
+    "FUNC_LSP_WHOLE_BAT_FIRST_1_EN": "PV Charge Priority window 1 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_BAT_FIRST_2_EN": "PV Charge Priority window 2 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_BAT_FIRST_3_EN": "PV Charge Priority window 3 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_BYPASS_1_EN": "Bypass Mode window 1 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_BYPASS_2_EN": "Bypass Mode window 2 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_BYPASS_3_EN": "Bypass Mode window 3 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_SELF_CONSUMPTION_1_EN": "Self Consumption window 1 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_SELF_CONSUMPTION_2_EN": "Self Consumption window 2 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_SELF_CONSUMPTION_3_EN": "Self Consumption window 3 enabled (whole-day band)",
+    "FUNC_LSP_WHOLE_DAY_SCHEDULE_EN": "Use whole-day LSP schedule mode",
+    "FUNC_N_PE_CONNECT_INNER_EN": "Internal N-PE bond (N-PE Connect); not the same as neutral detect",
+    "FUNC_GRID_PEAK_SHAVING": "Peak Shaving Mode enable (Monitor Center working mode tab)",
+    "FUNC_GEN_PEAK_SHAVING": "Generator peak shaving enable",
+    "LSP_HOLD_DIS_CHG_POWER_TIME_37": "Peak Shaving window 1 — start hour",
+    "LSP_HOLD_DIS_CHG_POWER_TIME_38": "Peak Shaving window 1 — start minute",
+    "LSP_HOLD_DIS_CHG_POWER_TIME_39": "Peak Shaving window 1 — end hour",
+    "LSP_HOLD_DIS_CHG_POWER_TIME_40": "Peak Shaving window 1 — end minute",
+    "LSP_HOLD_DIS_CHG_POWER_TIME_41": "Peak Shaving window 2 — start hour",
+    "LSP_HOLD_DIS_CHG_POWER_TIME_42": "Peak Shaving window 2 — start minute",
+    "LSP_HOLD_DIS_CHG_POWER_TIME_43": "Peak Shaving window 2 — end hour",
+    "LSP_HOLD_DIS_CHG_POWER_TIME_44": "Peak Shaving window 2 — end minute",
+    "_12K_HOLD_GRID_PEAK_SHAVING_POWER": "Peak Shaving window 1 — discharge power (kW)",
+    "_12K_HOLD_GRID_PEAK_SHAVING_POWER_2": "Peak Shaving window 2 — discharge power (kW)",
+    "_12K_HOLD_GRID_PEAK_SHAVING_SOC": "Peak Shaving window 1 — stop SOC (%)",
+    "_12K_HOLD_GRID_PEAK_SHAVING_SOC_2": "Peak Shaving window 2 — stop SOC (%)",
+    "_12K_HOLD_GRID_PEAK_SHAVING_VOLT": "Peak Shaving window 1 — stop voltage (V)",
+    "_12K_HOLD_GRID_PEAK_SHAVING_VOLT_2": "Peak Shaving window 2 — stop voltage (V)",
+    "HOLD_MODEL": "Packed MODEL register (Modbus 0–1; device identity — immutable)",
+    "HOLD_MODEL_powerRating": "Rated AC output power tier (product-specific enum)",
+    "HOLD_MODEL_batteryType": "Battery chemistry (MODEL_BIT_BATTERY_TYPE)",
+    "HOLD_MODEL_lithiumType": "Lithium BMS / brand profile (MODEL_BIT_LITHIUM_TYPE)",
+    "HOLD_MODEL_leadAcidType": "Lead-acid battery profile",
+    "HOLD_MODEL_measurement": "Export measurement method (MODEL_BIT_MEASUREMENT)",
+    "HOLD_MODEL_meterType": "Meter phase count (MODEL_BIT_METER_TYPE)",
+    "HOLD_MODEL_meterBrand": "External meter brand",
+    "HOLD_MODEL_wirelessMeter": "Wireless meter enable",
+    "HOLD_MODEL_usVersion": "US-market hardware variant",
+    "HOLD_MODEL_rule": "Grid interconnection rule index",
+    "HOLD_MODEL_ruleMask": "Grid rule bitmask"
+  },
+  "hold_model_subfield_value_keys": {
+    "HOLD_MODEL_batteryType": "MODEL_BIT_BATTERY_TYPE",
+    "HOLD_MODEL_measurement": "MODEL_BIT_MEASUREMENT",
+    "HOLD_MODEL_meterType": "MODEL_BIT_METER_TYPE"
+  },
+  "power_rating_profiles": {
+    "12KPV": "12K",
+    "18KPV": "12K",
+    "default": "Default"
+  },
+  "lsp_hold_time_groups": {
+    "peak_shaving": {
+      "mode": "Peak Shaving",
+      "enable_field": "FUNC_GRID_PEAK_SHAVING",
+      "windows": [
+        {
+          "window": 1,
+          "start_hour": "LSP_HOLD_DIS_CHG_POWER_TIME_37",
+          "start_minute": "LSP_HOLD_DIS_CHG_POWER_TIME_38",
+          "end_hour": "LSP_HOLD_DIS_CHG_POWER_TIME_39",
+          "end_minute": "LSP_HOLD_DIS_CHG_POWER_TIME_40",
+          "stop_soc": "_12K_HOLD_GRID_PEAK_SHAVING_SOC",
+          "stop_volt": "_12K_HOLD_GRID_PEAK_SHAVING_VOLT",
+          "power": "_12K_HOLD_GRID_PEAK_SHAVING_POWER"
+        },
+        {
+          "window": 2,
+          "start_hour": "LSP_HOLD_DIS_CHG_POWER_TIME_41",
+          "start_minute": "LSP_HOLD_DIS_CHG_POWER_TIME_42",
+          "end_hour": "LSP_HOLD_DIS_CHG_POWER_TIME_43",
+          "end_minute": "LSP_HOLD_DIS_CHG_POWER_TIME_44",
+          "stop_soc": "_12K_HOLD_GRID_PEAK_SHAVING_SOC_2",
+          "stop_volt": "_12K_HOLD_GRID_PEAK_SHAVING_VOLT_2",
+          "power": "_12K_HOLD_GRID_PEAK_SHAVING_POWER_2"
+        }
+      ]
+    }
+  }
+}

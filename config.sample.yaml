@@ -1,0 +1,14 @@
+# EG4 Electronics monitoring configuration
+eg4_monitor:
+  username: "username@example.com"  # Add your EG4 Monitor Center username here
+  password: password
+  base_url: "https://monitor.eg4electronics.com/WManage/web/analyze/data"
+
+# InfluxDB configuration
+influxdb:
+  host: "localhost"
+  port: 8086
+  database: "eg4_data"
+  username: ""  # Optional
+  password: ""  # Optional
+

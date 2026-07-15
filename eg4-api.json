@@ -1,0 +1,2641 @@
+{
+   "components" : {
+      "schemas" : {
+         "ChargeSettingsDTO" : {
+            "properties" : {
+               "acChargingEnabled" : {
+                  "type" : "boolean"
+               },
+               "chargeBasedOnSocOrVolt" : {
+                  "type" : "boolean"
+               },
+               "chargeBatteryAfterLoads" : {
+                  "type" : "boolean"
+               },
+               "hour_endTime_0" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "hour_endTime_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "hour_endTime_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "hour_startTime_0" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "hour_startTime_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "hour_startTime_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "invSN" : {
+                  "type" : "string"
+               },
+               "leadAcid_maxChargeRate" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "maxChargingPowerFromGrid" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "minute_endTime_0" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "minute_endTime_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "minute_endTime_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "minute_startTime_0" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "minute_startTime_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "minute_startTime_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "soc_endChargingCutoff" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "soc_startChargingCutoff" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "timeOrSocVolt" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "volt_endChargingCutoff" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "volt_startChargingCutoff" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               }
+            },
+            "required" : [
+               "invSN"
+            ],
+            "type" : "object"
+         },
+         "CurrentStateDTO" : {
+            "properties" : {
+               "acCouplePower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "batCapacity" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "batParallelNum" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "batType" : {
+                  "type" : "string"
+               },
+               "fwCode" : {
+                  "type" : "string"
+               },
+               "loadPower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "maxChgCurr" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "maxDischgCurr" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pCharge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pDisCharge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pInv" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pToGrid" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pToUser" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "peps" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "serialNumber" : {
+                  "type" : "string"
+               },
+               "soc" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "statusCode" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "statusText" : {
+                  "type" : "string"
+               },
+               "timestamp" : {
+                  "format" : "int64",
+                  "type" : "integer"
+               },
+               "vBat" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               }
+            },
+            "type" : "object"
+         },
+         "CurrentStateDTOv" : {
+            "properties" : {
+               "acCouplePower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "batCapacity" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "batParallelNum" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "batType" : {
+                  "type" : "string"
+               },
+               "consumptionPower" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "curEnergyCapacity" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "deviceType" : {
+                  "type" : "string"
+               },
+               "fwCode" : {
+                  "type" : "string"
+               },
+               "loadPower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "maxChgCurr" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "maxDischgCurr" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "maxEnergyCapacity" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "pCharge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pDisCharge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pInv" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pToGrid" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pToUser" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "peps" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "serialNumber" : {
+                  "type" : "string"
+               },
+               "soc" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "statusCode" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "statusText" : {
+                  "type" : "string"
+               },
+               "timestamp" : {
+                  "format" : "int64",
+                  "type" : "integer"
+               },
+               "vBat" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               }
+            },
+            "type" : "object"
+         },
+         "DischargeSettingsDTO" : {
+            "properties" : {
+               "dischargeBasedOnSocOrVolt" : {
+                  "type" : "boolean"
+               },
+               "dischargeCurrentLimit" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "invSN" : {
+                  "type" : "string"
+               },
+               "offGridSocCutoff" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "offGridVoltCutoff" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "onGridSocCutoff" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "onGridVoltCutoff" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "startDischgWhenGridPowerIs" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               }
+            },
+            "type" : "object"
+         },
+         "EnergyInfoDTO" : {
+            "properties" : {
+               "serialNumber" : {
+                  "type" : "string"
+               },
+               "timestamp" : {
+                  "format" : "int64",
+                  "type" : "integer"
+               },
+               "todayCharging" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayDischarging" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayGenPower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayInvPower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayPV1Power" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayPV2Power" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayPV3Power" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayReceivedPower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayToGridPower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayToUserPower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "todayUsage" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               }
+            },
+            "type" : "object"
+         },
+         "EnergyInfoDTOV2" : {
+            "properties" : {
+               "eToUserAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eToUserDay" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayCharge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayConsumption" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "eTodayDischarge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayEPS" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayExport" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayGenerator" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayImport" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayInverter" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayPV1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayPV2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTodayPV3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalCharge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalConsumption" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "eTotalDischarge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalEPS" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalExport" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalGenerator" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalImport" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalInverter" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalPV1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalPV2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "eTotalPV3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "serialNumber" : {
+                  "type" : "string"
+               },
+               "timestamp" : {
+                  "format" : "int64",
+                  "type" : "integer"
+               }
+            },
+            "type" : "object"
+         },
+         "ForcedDischargeSettingsDTO" : {
+            "properties" : {
+               "fDischarge_endTime_hour" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_endTime_hour_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_endTime_hour_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_endTime_minute" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_endTime_minute_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_endTime_minute_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_startTime_hour" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_startTime_hour_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_startTime_hour_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_startTime_minute" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_startTime_minute_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "fDischarge_startTime_minute_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "forcedDischargeEnabled" : {
+                  "type" : "boolean"
+               },
+               "invSN" : {
+                  "type" : "string"
+               },
+               "powerCutoff" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pvSellback" : {
+                  "type" : "boolean"
+               },
+               "socCutoff" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "voltageCutoff" : {
+                  "format" : "double",
+                  "type" : "number"
+               }
+            },
+            "type" : "object"
+         },
+         "InverterHistory" : {
+            "properties" : {
+               "acCouplePower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "calendar" : {
+                  "type" : "string"
+               },
+               "fac" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "feps" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "genPower" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "genVolt" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteChgAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteDisChgAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteEpsAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteEpsL1NAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteEpsL2NAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteGenAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteInvAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getePv1All" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getePv2All" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getePv3All" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteRecAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteToGridAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "geteToUserAll" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getpCharge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getpDisCharge" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getpEpsL1N" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getpEpsL2N" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getpInv" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getpToGrid" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getpToUser" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getsEpsL1N" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getsEpsL2N" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "gettBat" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "gettInner" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "gettRadiator1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "gettRadiator2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getvBat" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getvBus1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getvBus2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "getvBusP" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "peps" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "ppv1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "ppv2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "ppv3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "prec" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "qac" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "seps" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "serialNum" : {
+                  "type" : "string"
+               },
+               "soc" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "status" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "timestamp" : {
+                  "format" : "int64",
+                  "type" : "integer"
+               },
+               "vacr" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vacs" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vact" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vepsr" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vepss" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vepst" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "vpv3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               }
+            },
+            "type" : "object"
+         },
+         "InverterSettingsDTO" : {
+            "properties" : {
+               "BIT_AC_CHARGE_TYPE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_CT_SAMPLE_RATIO" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_DISCHG_CONTROL_TYPE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_DRY_CONTRACTOR_MULTIPLEX" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_FAN_1_MAX_SPEED" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_FAN_2_MAX_SPEED" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_FAN_3_MAX_SPEED" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_FAN_4_MAX_SPEED" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_FAN_5_MAX_SPEED" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_GENERATOR_CHARGE_TYPE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_METER_NUMBER" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_METER_PHASE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_ON_GRID_EOD_TYPE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_OUT_CT_POSITION" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_PVCT_SAMPLE_RATIO" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_PVCT_SAMPLE_TYPE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "BIT_WORKING_MODE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "FUNC_ACTIVE_POWER_LIMIT_MODE" : {
+                  "type" : "boolean"
+               },
+               "FUNC_AC_CHARGE" : {
+                  "type" : "boolean"
+               },
+               "FUNC_AC_COUPLE_DARK_START_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_AC_COUPLE_EN_1" : {
+                  "type" : "boolean"
+               },
+               "FUNC_AC_COUPLE_EN_2" : {
+                  "type" : "boolean"
+               },
+               "FUNC_AC_COUPLE_EN_3" : {
+                  "type" : "boolean"
+               },
+               "FUNC_AC_COUPLE_EN_4" : {
+                  "type" : "boolean"
+               },
+               "FUNC_AC_COUPLING_FUNCTION" : {
+                  "type" : "boolean"
+               },
+               "FUNC_ANTI_ISLAND_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_BATTERY_BACKUP_CTRL" : {
+                  "type" : "boolean"
+               },
+               "FUNC_BATTERY_CALIBRATION_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_BATTERY_ECO_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_BAT_CHARGE_CONTROL" : {
+                  "type" : "boolean"
+               },
+               "FUNC_BAT_DISCHARGE_CONTROL" : {
+                  "type" : "boolean"
+               },
+               "FUNC_BAT_SHARED" : {
+                  "type" : "boolean"
+               },
+               "FUNC_BUZZER_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_CHARGE_LAST" : {
+                  "type" : "boolean"
+               },
+               "FUNC_CT_DIRECTION_REVERSED" : {
+                  "type" : "boolean"
+               },
+               "FUNC_DCI_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_DRMS_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_ENERTEK_WORKING_MODE" : {
+                  "type" : "boolean"
+               },
+               "FUNC_EPS_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_FAN_SPEED_SLOPE_CTRL_1" : {
+                  "type" : "boolean"
+               },
+               "FUNC_FAN_SPEED_SLOPE_CTRL_2" : {
+                  "type" : "boolean"
+               },
+               "FUNC_FAN_SPEED_SLOPE_CTRL_3" : {
+                  "type" : "boolean"
+               },
+               "FUNC_FAN_SPEED_SLOPE_CTRL_4" : {
+                  "type" : "boolean"
+               },
+               "FUNC_FAN_SPEED_SLOPE_CTRL_5" : {
+                  "type" : "boolean"
+               },
+               "FUNC_FEED_IN_GRID_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_FORCED_CHG_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_FORCED_DISCHG_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_GEN_PEAK_SHAVING" : {
+                  "type" : "boolean"
+               },
+               "FUNC_GFCI_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_GO_TO_OFFGRID" : {
+                  "type" : "boolean"
+               },
+               "FUNC_GREEN_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_GRID_CT_CONNECTION_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_GRID_ON_POWER_SS_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_GRID_PEAK_SHAVING" : {
+                  "type" : "boolean"
+               },
+               "FUNC_HALF_HOUR_AC_CHG_START_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_ISO_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_AC_CHARGE" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BATT_VOLT_OR_SOC" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_ACTIVATION_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_10_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_11_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_12_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_13_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_14_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_15_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_16_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_17_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_18_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_19_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_1_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_20_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_21_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_22_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_23_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_24_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_25_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_26_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_27_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_28_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_29_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_2_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_30_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_31_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_32_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_33_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_34_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_35_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_36_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_37_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_38_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_39_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_3_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_40_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_41_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_42_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_43_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_44_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_45_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_46_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_47_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_48_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_4_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_5_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_6_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_7_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_8_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BAT_FIRST_9_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_10_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_11_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_12_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_13_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_14_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_15_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_16_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_17_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_18_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_19_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_1_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_20_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_21_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_22_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_23_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_24_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_25_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_26_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_27_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_28_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_29_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_2_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_30_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_31_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_32_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_33_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_34_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_35_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_36_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_37_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_38_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_39_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_3_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_40_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_41_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_42_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_43_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_44_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_45_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_46_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_47_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_48_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_4_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_5_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_6_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_7_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_8_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_9_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_BYPASS_MODE_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_CHARGE_PRIORITY_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_FAN_CHECK_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_ISO_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_LCD_REMOTE_DIS_CHG_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_10_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_11_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_12_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_1_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_2_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_3_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_4_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_5_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_6_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_7_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_8_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_OUTPUT_9_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_SELF_CONSUMPTION_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_SET_TO_STANDBY" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_BAT_FIRST_1_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_BAT_FIRST_2_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_BAT_FIRST_3_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_BYPASS_1_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_BYPASS_2_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_BYPASS_3_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_DAY_SCHEDULE_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_SELF_CONSUMPTION_1_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_SELF_CONSUMPTION_2_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LSP_WHOLE_SELF_CONSUMPTION_3_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_LVRT_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_MICRO_GRID_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_MIDBOX_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_NEUTRAL_DETECT_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_N_PE_CONNECT_INNER_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_ON_GRID_ALWAYS_ON" : {
+                  "type" : "boolean"
+               },
+               "FUNC_OVF_LOAD_DERATE_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_PARALLEL_DATA_SYNC_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_PV_ARC" : {
+                  "type" : "boolean"
+               },
+               "FUNC_PV_ARC_FAULT_CLEAR" : {
+                  "type" : "boolean"
+               },
+               "FUNC_PV_GRID_OFF_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_PV_SELL_TO_GRID_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_QUICK_CHARGE_CTRL" : {
+                  "type" : "boolean"
+               },
+               "FUNC_RETAIN_SHUTDOWN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_RETAIN_STANDBY" : {
+                  "type" : "boolean"
+               },
+               "FUNC_RSD_DISABLE" : {
+                  "type" : "boolean"
+               },
+               "FUNC_RUN_WITHOUT_GRID" : {
+                  "type" : "boolean"
+               },
+               "FUNC_RUN_WITHOUT_GRID_12K" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SET_TO_STANDBY" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SHEDDING_MODE_EN_1" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SHEDDING_MODE_EN_2" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SHEDDING_MODE_EN_3" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SHEDDING_MODE_EN_4" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_ENABLE" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_EN_1" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_EN_2" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_EN_3" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_EN_4" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_GRID_ON_1" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_GRID_ON_2" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_GRID_ON_3" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SMART_LOAD_GRID_ON_4" : {
+                  "type" : "boolean"
+               },
+               "FUNC_SW_SEAMLESSLY_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_TAKE_LOAD_TOGETHER" : {
+                  "type" : "boolean"
+               },
+               "FUNC_TOTAL_LOAD_COMPENSATION_EN" : {
+                  "type" : "boolean"
+               },
+               "FUNC_TRIP_TIME_UNIT" : {
+                  "type" : "boolean"
+               },
+               "FUNC_WATT_VOLT_EN" : {
+                  "type" : "boolean"
+               },
+               "HOLD_ACTIVE_POWER_PERCENT_CMD" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_BATTERY_CURRENT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_END_BATTERY_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_END_BATTERY_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_AC_CHARGE_END_HOUR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_END_HOUR_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_END_HOUR_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_END_MINUTE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_END_MINUTE_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_END_MINUTE_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_POWER_CMD" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_AC_CHARGE_SOC_LIMIT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_START_BATTERY_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_START_BATTERY_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_AC_CHARGE_START_HOUR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_START_HOUR_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_START_HOUR_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_START_MINUTE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_START_MINUTE_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_CHARGE_START_MINUTE_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_END_HOUR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_END_HOUR_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_END_HOUR_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_END_MINUTE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_END_MINUTE_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_END_MINUTE_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_START_HOUR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_START_HOUR_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_START_HOUR_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_START_MINUTE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_START_MINUTE_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_AC_FIRST_START_MINUTE_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_BATTERY_LOW_TO_UTILITY_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_BATTERY_LOW_TO_UTILITY_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_BATTERY_WARNING_RECOVERY_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_BATTERY_WARNING_RECOVERY_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_BATTERY_WARNING_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_BATTERY_WARNING_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_CHARGE_POWER_PERCENT_CMD" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_COM_ADDR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_CONNECT_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_CT_POWER_OFFSET" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_DISCHG_CUT_OFF_SOC_EOD" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_DISCHG_POWER_PERCENT_CMD" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_EPS_FREQ_SET" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_EPS_VOLT_SET" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_EQUALIZATION_PERIOD" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_EQUALIZATION_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_EQUALIZATION_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_FEED_IN_GRID_POWER_PERCENT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FLOATING_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_FORCED_CHARGE_END_HOUR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_END_HOUR_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_END_HOUR_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_END_MINUTE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_END_MINUTE_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_END_MINUTE_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_START_HOUR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_START_HOUR_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_START_HOUR_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_START_MINUTE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_START_MINUTE_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHARGE_START_MINUTE_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_CHG_POWER_CMD" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_FORCED_CHG_SOC_LIMIT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_END_HOUR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_END_HOUR_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_END_HOUR_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_END_MINUTE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_END_MINUTE_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_END_MINUTE_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_START_HOUR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_START_HOUR_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_START_HOUR_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_START_MINUTE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_START_MINUTE_1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHARGE_START_MINUTE_2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FORCED_DISCHG_POWER_CMD" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_FORCED_DISCHG_SOC_LIMIT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_FW_CODE" : {
+                  "type" : "string"
+               },
+               "HOLD_GRID_FREQ_CONN_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_FREQ_CONN_LOW" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_FREQ_LIMIT1_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_FREQ_LIMIT1_HIGH_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_GRID_FREQ_LIMIT1_LOW" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_FREQ_LIMIT1_LOW_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_GRID_FREQ_LIMIT2_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_FREQ_LIMIT2_HIGH_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_GRID_FREQ_LIMIT2_LOW" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_FREQ_LIMIT2_LOW_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_GRID_FREQ_LIMIT3_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_FREQ_LIMIT3_HIGH_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_GRID_FREQ_LIMIT3_LOW" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_FREQ_LIMIT3_LOW_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_GRID_VOLT_CONN_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_CONN_LOW" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT1_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT1_HIGH_TIME" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT1_LOW" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT1_LOW_TIME" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT2_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT2_HIGH_TIME" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT2_LOW" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT2_LOW_TIME" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT3_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT3_HIGH_TIME" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT3_LOW" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_LIMIT3_LOW_TIME" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_GRID_VOLT_MOV_AVG_HIGH" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_LANGUAGE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_LEAD_ACID_CHARGE_RATE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_LEAD_ACID_CHARGE_VOLT_REF" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_LEAD_ACID_DISCHARGE_CUT_OFF_VOLT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_LEAD_ACID_DISCHARGE_RATE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_LEAD_ACID_TEMPR_LOWER_LIMIT_CHG" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_LEAD_ACID_TEMPR_LOWER_LIMIT_DISCHG" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_LEAD_ACID_TEMPR_UPPER_LIMIT_CHG" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_LEAD_ACID_TEMPR_UPPER_LIMIT_DISCHG" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_LINE_MODE_INPUT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MAINTENANCE_COUNT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MAX_AC_INPUT_POWER" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_MAX_GENERATOR_INPUT_POWER" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MAX_Q_PERCENT_FOR_QV" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL" : {
+                  "type" : "string"
+               },
+               "HOLD_MODEL_batteryType" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_leadAcidType" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_lithiumType" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_measurement" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_meterBrand" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_meterType" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_powerRating" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_rule" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_ruleMask" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_usVersion" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_MODEL_wirelessMeter" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_NOMINAL_BATTERY_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_OFFLINE_TIMEOUT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_ON_GRID_EOD_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_OUTPUT_CONFIGURATION" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_PF_CMD" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_PF_CMD_TEXT" : {
+                  "type" : "string"
+               },
+               "HOLD_POWER_SOFT_START_SLOPE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_PV_INPUT_MODE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_REACTIVE_POWER_CMD_TYPE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_REACTIVE_POWER_PERCENT_CMD" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_RECONNECT_TIME" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_SERIAL_NUM" : {
+                  "type" : "string"
+               },
+               "HOLD_SET_COMPOSED_PHASE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_SET_MASTER_OR_SLAVE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_SOC_LOW_LIMIT_EPS_DISCHG" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_SPEC_LOAD_COMPENSATE" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_START_PV_VOLT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_SYSTEM_CHARGE_SOC_LIMIT" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "HOLD_SYSTEM_CHARGE_VOLT_LIMIT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_TIME" : {
+                  "type" : "string"
+               },
+               "HOLD_V1H" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_V1L" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_V2H" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_V2L" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "HOLD_VBAT_START_DERATING" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "INPUT_BATTERY_VOLTAGE" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "OFF_GRID_HOLD_GEN_CHG_END_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "OFF_GRID_HOLD_GEN_CHG_END_VOLT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "OFF_GRID_HOLD_GEN_CHG_START_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "OFF_GRID_HOLD_GEN_CHG_START_VOLT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "OFF_GRID_HOLD_MAX_GEN_CHG_BAT_CURR" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "_12K_HOLD_AC_COUPLE_END_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "_12K_HOLD_AC_COUPLE_END_VOLT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "_12K_HOLD_AC_COUPLE_START_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "_12K_HOLD_AC_COUPLE_START_VOLT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "_12K_HOLD_SMART_LOAD_END_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "_12K_HOLD_SMART_LOAD_END_VOLT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "_12K_HOLD_SMART_LOAD_START_SOC" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "_12K_HOLD_SMART_LOAD_START_VOLT" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "_12K_HOLD_START_PV_POWER" : {
+                  "format" : "double",
+                  "type" : "number"
+               },
+               "inverterRuntimeDeviceTime" : {
+                  "type" : "string"
+               },
+               "inverterSn" : {
+                  "type" : "string"
+               },
+               "msg" : {
+                  "type" : "string"
+               },
+               "msgCode" : {
+                  "type" : "string"
+               }
+            },
+            "type" : "object"
+         },
+         "RGMInfoDTO" : {
+            "properties" : {
+               "AFCI_ArcCh1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_ArcCh2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_ArcCh3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_ArcCh4" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_CurrCh1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_CurrCh2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_CurrCh3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_CurrCh4" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_Flag" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_MaxArcCh1" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_MaxArcCh2" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_MaxArcCh3" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "AFCI_MaxArcCh4" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "RGMEnabled" : {
+                  "type" : "string"
+               },
+               "pToGrid" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               },
+               "pToUser" : {
+                  "format" : "int32",
+                  "type" : "integer"
+               }
+            },
+            "type" : "object"
+         }
+      },
+      "securitySchemes" : {
+         "access_token" : {
+            "in" : "header",
+            "name" : "access_token",
+            "type" : "apiKey"
+         }
+      }
+   },
+   "info" : {
+      "contact" : {
+         "email" : "software@eg4electronics.com",
+         "name" : "Software Team"
+      },
+      "description" : "API allowing access to EG4 Inverter data\nSupporting both Monitoring and Control Functionalities",
+      "title" : "EG4 Monitoring And Control API",
+      "version" : "0.3.0"
+   },
+   "openapi" : "3.0.1",
+   "paths" : {
+      "/api/device/info/rgmInfo/{serialNumber}" : {
+         "get" : {
+            "operationId" : "rgmInfo",
+            "parameters" : [
+               {
+                  "in" : "path",
+                  "name" : "serialNumber",
+                  "required" : true,
+                  "schema" : {
+                     "type" : "string"
+                  }
+               }
+            ],
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "$ref" : "#/components/schemas/RGMInfoDTO"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Get Revenue Grade Meter information for target inverter.",
+            "tags" : [
+               "device",
+               "info"
+            ]
+         }
+      },
+      "/api/device/settings/allSettings/{serialNumber}" : {
+         "get" : {
+            "operationId" : "allSettings",
+            "parameters" : [
+               {
+                  "in" : "path",
+                  "name" : "serialNumber",
+                  "required" : true,
+                  "schema" : {
+                     "type" : "string"
+                  }
+               }
+            ],
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "$ref" : "#/components/schemas/InverterSettingsDTO"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Get settings information for target inverter.",
+            "tags" : [
+               "settings",
+               "device"
+            ]
+         }
+      },
+      "/api/device/settings/setChargeSettings" : {
+         "post" : {
+            "description" : "Charge settings supported: AC Charging, Charging Battery Last, Time-based AC Charge, Voltage-based AC Charge, SOC-based AC Charge",
+            "operationId" : "setChargeSettings",
+            "requestBody" : {
+               "content" : {
+                  "application/json" : {
+                     "schema" : {
+                        "$ref" : "#/components/schemas/ChargeSettingsDTO"
+                     }
+                  }
+               },
+               "required" : true
+            },
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "type" : "string"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Set battery charging settings for target inverter",
+            "tags" : [
+               "settings",
+               "device"
+            ]
+         }
+      },
+      "/api/device/settings/setDischargeSettings" : {
+         "post" : {
+            "description" : "Discharge settings supported: SOC-based Cutoff, Voltage-based Cutoff, Timing-based, DischargePower-based Cutoff",
+            "operationId" : "setDischargeSettings",
+            "requestBody" : {
+               "content" : {
+                  "application/json" : {
+                     "schema" : {
+                        "$ref" : "#/components/schemas/DischargeSettingsDTO"
+                     }
+                  }
+               },
+               "required" : true
+            },
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "type" : "string"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Set battery discharging settings for target inverter",
+            "tags" : [
+               "settings",
+               "device"
+            ]
+         }
+      },
+      "/api/device/settings/setForcedDischargeSettings" : {
+         "post" : {
+            "description" : "Forced discharge settings supported: SOC-based Cutoff, Voltage-based Cutoff, Timing-based, DischargePower-based Cutoff",
+            "operationId" : "setForcedDischargeSettings",
+            "requestBody" : {
+               "content" : {
+                  "application/json" : {
+                     "schema" : {
+                        "$ref" : "#/components/schemas/ForcedDischargeSettingsDTO"
+                     }
+                  }
+               },
+               "required" : true
+            },
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "type" : "string"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Set forced discharging settings for target inverter",
+            "tags" : [
+               "settings",
+               "device"
+            ]
+         }
+      },
+      "/api/device/summary/currentState/{serialNumber}" : {
+         "get" : {
+            "operationId" : "currentState",
+            "parameters" : [
+               {
+                  "in" : "path",
+                  "name" : "serialNumber",
+                  "required" : true,
+                  "schema" : {
+                     "type" : "string"
+                  }
+               }
+            ],
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "$ref" : "#/components/schemas/CurrentStateDTO"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Get the current state of target inverter.",
+            "tags" : [
+               "summary",
+               "device"
+            ]
+         }
+      },
+      "/api/device/summary/energyInfo/{serialNumber}" : {
+         "get" : {
+            "operationId" : "energyInfo",
+            "parameters" : [
+               {
+                  "in" : "path",
+                  "name" : "serialNumber",
+                  "required" : true,
+                  "schema" : {
+                     "type" : "string"
+                  }
+               }
+            ],
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "$ref" : "#/components/schemas/EnergyInfoDTO"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Get the current energy info of target inverter.",
+            "tags" : [
+               "summary",
+               "device"
+            ]
+         }
+      },
+      "/api/device/v2/summary/currentState/{serialNumber}" : {
+         "get" : {
+            "operationId" : "currentStateV2",
+            "parameters" : [
+               {
+                  "in" : "path",
+                  "name" : "serialNumber",
+                  "required" : true,
+                  "schema" : {
+                     "type" : "string"
+                  }
+               }
+            ],
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "$ref" : "#/components/schemas/CurrentStateDTOv"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Get the current state of target inverter, v2 includes battery capacity wH",
+            "tags" : [
+               "summary",
+               "device"
+            ]
+         }
+      },
+      "/api/device/v2/summary/energyInfo/{serialNumber}" : {
+         "get" : {
+            "operationId" : "energyInfoV2",
+            "parameters" : [
+               {
+                  "in" : "path",
+                  "name" : "serialNumber",
+                  "required" : true,
+                  "schema" : {
+                     "type" : "string"
+                  }
+               }
+            ],
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "$ref" : "#/components/schemas/EnergyInfoDTOV2"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Get the current energy info of target inverter. V2 Includes total aggregate counters",
+            "tags" : [
+               "summary",
+               "device"
+            ]
+         }
+      },
+      "/api/history/getInverterHistory" : {
+         "get" : {
+            "description" : "Given two times t1, t2, returns all inverter state changes in range t1 to t2 - sorted",
+            "operationId" : "getInverterHistory",
+            "parameters" : [
+               {
+                  "in" : "query",
+                  "name" : "invSN",
+                  "required" : true,
+                  "schema" : {
+                     "type" : "string"
+                  }
+               },
+               {
+                  "in" : "query",
+                  "name" : "t1",
+                  "required" : true,
+                  "schema" : {
+                     "format" : "int64",
+                     "type" : "integer"
+                  }
+               },
+               {
+                  "in" : "query",
+                  "name" : "t2",
+                  "required" : true,
+                  "schema" : {
+                     "format" : "int64",
+                     "type" : "integer"
+                  }
+               }
+            ],
+            "responses" : {
+               "200" : {
+                  "content" : {
+                     "*/*" : {
+                        "schema" : {
+                           "items" : {
+                              "$ref" : "#/components/schemas/InverterHistory"
+                           },
+                           "type" : "array"
+                        }
+                     }
+                  },
+                  "description" : "OK"
+               }
+            },
+            "summary" : "Get segment of history for target inverter",
+            "tags" : [
+               "history",
+               "device"
+            ]
+         }
+      }
+   },
+   "servers" : [
+      {
+         "url" : "https://api.eg4electronics.com"
+      }
+   ],
+   "tags" : [
+      {
+         "description" : "Endpoints concerning devices (Inverters, Batteries, etc)",
+         "name" : "device"
+      }
+   ]
+}
